@@ -39,6 +39,10 @@ function clock(){
    if(hours>=18 && hours<=24){
        greeting.innerHTML="Hi There Good Evening";
    }
+   if(hours>=20 && hours<=24){
+    greeting.innerHTML="Hi There Good Night";
+}
+
 }
 function updateTimes(k){
     if (k<10)    return "0"+k;
