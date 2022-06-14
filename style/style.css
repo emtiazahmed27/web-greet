@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=Josefin+Sans:wght@300;400;600&family=League+Spartan:wght@700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Outfit:wght@300;400;600&family=Play:wght@400;700&family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.h-bg-color {
+  background-color: cadetblue;
+}
+
+.m-bg-color {
+  background-color: tomato;
+}
+
+.s-bg-color {
+  background-color: crimson;
+}
+
+.ampm-bg-color {
+  background-color: chocolate;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Fira Code";
+  background-image: url(../images/v1015-104a.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(23, 23, 82);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body .container {
+  background-color: white;
+  min-width: 30%;
+  height: auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 5px solid;
+}
+body .container .greetings {
+  margin-bottom: 1rem;
+}
+body .container .greetings .bar {
+  width: 0%;
+  margin-inline: auto;
+  min-height: 2px;
+  transition: all 0.9s ease-in-out;
+}
+body .container .greetings:hover .bar {
+  width: 100%;
+  background-color: red;
+}
+body .container .clock {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-gap: 10px;
+  width: 50%;
+  margin-inline: auto;
+}
+body .container .clock .time {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  body .container {
+    max-width: 85%;
+  }
+  body .container .greetings h1 {
+    font-size: 2rem;
+  }
+  body .container .clock {
+    width: 80%;
+  }
+  body .container .clock .time {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
